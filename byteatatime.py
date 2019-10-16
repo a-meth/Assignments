@@ -3,6 +3,8 @@ import base64
 obj = AES.new('1234567890123456', AES.MODE_ECB)
 secret = "Um9sbGluJyBpbiBteSA1LjAKV2l0aCBteSByYWctdG9wIGRvd24gc28gbXkgaGFpciBjYW4gYmxvdwpUaGUgZ2lybGllcyBvbiBzdGFuZGJ5IHdhdmluZyBqdXN0IHRvIHNheSBoaQpEaWQgeW91IHN0b3A/IE5vLCBJIGp1c3QgZHJvdmUgYnkK"
 secret = secret.decode('base64')
+print(secret)
+# Not so secret anymore!
 
 flag = ''
 for k in range(1,(len(secret)/16)+2):
